@@ -1,3 +1,4 @@
+#include"colorscheme.h"
 /* See LICENSE file for copyright and license details. */
 
 /*
@@ -5,7 +6,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Input:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -84,47 +85,6 @@ unsigned int tabspaces = 2;
 
 /* bg opacity */
 unsigned int alpha = 0xcc;
-
-
-/*
- * base16-google-dark-theme.h
- *
- * Base16: (https://github.com/chriskempson/base16)
- *
- * Authors:
- *
- * Scheme: Seth Wright (http://sethawright.com)
- * Template: Honza Pokorny <me@honza.ca>
- *
-*/
-
-
-static const char *colorname[] = {
-  "#1d1f21", /* base00 */
-  "#cc342b", /* base08 */
-  "#198844", /* base0B */
-  "#fba922", /* base0A */
-  "#3971ed", /* base0D */
-  "#a36ac7", /* base0E */
-  "#3971ed", /* base0C */
-  "#c5c8c6", /* base05 */
-  "#969896", /* base03 */
-  "#f96a38", /* base09 */
-  "#282a2e", /* base01 */
-  "#373b41", /* base02 */
-  "#b4b7b4", /* base04 */
-  "#e0e0e0", /* base06 */
-  "#3971ed", /* base0F */
-  "#ffffff", /* base07 */
-  [255] = "0",
-  "#000000",
-  "#ffffff",
-};
-
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
